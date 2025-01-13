@@ -22,7 +22,7 @@ You can use the [pandas](https://pandas.pydata.org/) library to load the dataset
 If you don't already have pandas installed, you can install it using pip:
 ```bash
 pip install pandas
-
+```
 
 ### 2. Load a CSV File from the Repository
 Here’s how you can load a file directly from the repository using its raw URL:
@@ -30,40 +30,12 @@ Here’s how you can load a file directly from the repository using its raw URL:
 ```python
 import pandas as pd
 
-# Example: Load the 'repairs_workshop.csv' file from Project 2
-url = "https://raw.githubusercontent.com/your-username/your-repository/main/project2/repairs_workshop.csv"
+# Example: Load the file from Project 1
+url = "https://raw.githubusercontent.com/Jalope/DatasetCollection/refs/heads/main/Project_1/Diamonds%20Prices2022.csv"
 data = pd.read_csv(url)
 
 # Display the first few rows of the dataset
-print(data.head())
-```
-
-### 3. Access Other Files
-Replace the `url` with the raw URL of the file you want to load. For example:
-- **Energy Data**: `https://raw.githubusercontent.com/your-username/your-repository/main/project1/energy_data.csv`
-- **Maintenance Times**: `https://raw.githubusercontent.com/your-username/your-repository/main/project2/maintenance_times.csv`
-
----
-
-## 💡 Example Use Case
-
-```python
-# Import pandas
-import pandas as pd
-
-# Load two datasets
-energy_url = "https://raw.githubusercontent.com/your-username/your-repository/main/project1/energy_data.csv"
-repairs_url = "https://raw.githubusercontent.com/your-username/your-repository/main/project2/repairs_workshop.csv"
-
-energy_data = pd.read_csv(energy_url)
-repairs_data = pd.read_csv(repairs_url)
-
-# Preview the data
-print("Energy Data:")
-print(energy_data.head())
-
-print("\nRepairs Data:")
-print(repairs_data.head())
+data.head()
 ```
 
 ---
